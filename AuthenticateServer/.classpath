@@ -2,5 +2,33 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/aopalliance.jar"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/aspectjweaver-1.6.12.jar"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/commons-logging.jar"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/flex-messaging-common.jar"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/flex-messaging.jar"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/hibernate-commons-annotations-4.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/hibernate-core-4.2.0.Final.jar" sourcepath="E:/xialiangliang/javalib/hibernate-release-4.2.0.Final/project/hibernate-core/src/main/java"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/javassist-3.15.0-GA.jar"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/jboss-logging-3.1.0.GA.jar"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/jboss-transaction-api_1.1_spec-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/mysql-connector-java-5.1.16-bin.jar"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/netty-3.6.3.Final.jar" sourcepath="E:/xialiangliang/javalib/netty-3.6.3.Final/jar/netty-3.6.3.Final-sources.jar"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/protocol.jar"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/slf4j-log4j12-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/spring-aop-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/spring-beans-3.2.0.RELEASE.jar" sourcepath="E:/xialiangliang/javalib/spring-framework-3.2.0.RELEASE/libs/spring-beans-3.2.0.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/spring-context-3.2.0.RELEASE.jar" sourcepath="E:/xialiangliang/javalib/spring-framework-3.2.0.RELEASE/libs/spring-context-3.2.0.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/spring-core-3.2.0.RELEASE.jar" sourcepath="E:/xialiangliang/javalib/spring-framework-3.2.0.RELEASE/libs/spring-core-3.2.0.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/spring-expression-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/spring-jdbc-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/spring-orm-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/spring-tx-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/BloodWar/libs/spring-web-3.2.0.RELEASE.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
