@@ -16,8 +16,8 @@
 
 	<import resource="jdbc.xml" />
 
-	<bean id="decoder" class="com.yunfeng.protocol.netty.NettyDecoder"/>
-	<bean id="encoder" class="com.yunfeng.protocol.netty.NettyEncoder"/>
+	<bean id="decoder" class="com.yunfeng.protocol.netty.NettyDecoder" />
+	<bean id="encoder" class="com.yunfeng.protocol.netty.NettyEncoder" />
 
 	<bean id="sessionFactory"
 		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
@@ -66,13 +66,10 @@
 		<aop:advisor pointcut-ref="service" advice-ref="txAdvice" />
 	</aop:config>
 
-		<!-- <aop:config proxy-target-class="true">
-		<aop:pointcut id="service"
-			expression="execution(* com.yunfeng.game.service..impl.*.*(..))" />
-		<aop:advisor pointcut-ref="service" advice-ref="txAdvice" />
-	</aop:config>
-	<aop:config proxy-target-class="true"> <aop:pointcut id="dao" expression="execution(* 
-		com.yunfeng.game.dao.*.*(..))" /> <aop:advisor pointcut-ref="dao" advice-ref="txAdvice" 
-		/> </aop:config> -->
+	<!-- <aop:config proxy-target-class="true"> <aop:pointcut id="service" expression="execution(* 
+		com.yunfeng.game.service..impl.*.*(..))" /> <aop:advisor pointcut-ref="service" 
+		advice-ref="txAdvice" /> </aop:config> <aop:config proxy-target-class="true"> 
+		<aop:pointcut id="dao" expression="execution(* com.yunfeng.game.dao.*.*(..))" 
+		/> <aop:advisor pointcut-ref="dao" advice-ref="txAdvice" /> </aop:config> -->
 
 </beans>

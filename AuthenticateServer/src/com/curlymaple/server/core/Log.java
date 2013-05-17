@@ -3,9 +3,10 @@ package com.curlymaple.server.core;
 import org.apache.log4j.Logger;
 
 /**
- * 日志
+ * Using log4j
+ * 
  * @author xialiangliang
- *
+ * 
  */
 public class Log {
 	private static Logger logger = Logger.getLogger(Module.SERVER);
@@ -24,5 +25,9 @@ public class Log {
 
 	public static void error(Object message) {
 		logger.error(message);
+	}
+
+	public static void error(Object message, Exception e) {
+		logger.error(message, e);
 	}
 }

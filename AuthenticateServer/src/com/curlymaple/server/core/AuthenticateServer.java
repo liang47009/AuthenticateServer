@@ -11,31 +11,16 @@ import org.jboss.netty.channel.ChannelPipelineFactory;
 import org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory;
 import org.springframework.stereotype.Component;
 
-import com.curlymaple.server.module.user.message.UserService;
-
 @Component
 public class AuthenticateServer {
 
 	@Resource
 	private ChannelPipelineFactory channelPipelineFactory;
 
-	public void init() {
-		BloodWarApplicationContext bwac = new BloodWarApplicationContext(
-				"applicationContext.xml");
-		// String[] names = bwac.getBeanFactory().getBeanDefinitionNames();
-		// for (int i = 0; i < names.length; i++) {
-		// System.out.println(names[i]);
-		// }
-		CommandDispatcher cd = bwac.getBean(CommandDispatcher.class);
-		cd.init();
-		ShutDownHook shutDownHook = bwac.getBean(ShutDownHook.class);
-		UserService userService = bwac.getBean(UserService.class);
-		userService.init();
-		Runtime.getRuntime().addShutdownHook(new Thread(shutDownHook));
-		this.start("127.0.0.1", 8888);
-	}
+	private String ip = Config.getConfig(Config.GAMESERVERIP);
+	private int port = Integer.valueOf(Config.getConfig(Config.GAMESERVERPORT));
 
-	private void start(String ip, int port) {
+	public void start() {
 		// 开始NIO线程
 		ChannelFactory factory = new NioServerSocketChannelFactory(
 				Executors.newCachedThreadPool(),

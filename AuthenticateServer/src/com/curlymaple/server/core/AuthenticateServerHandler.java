@@ -9,7 +9,7 @@ import org.jboss.netty.channel.MessageEvent;
 import org.jboss.netty.channel.SimpleChannelHandler;
 import org.springframework.stereotype.Component;
 
-@Component(value = "serverHandler")
+@Component
 public class AuthenticateServerHandler extends SimpleChannelHandler {
 
 	private Logger logger = Logger.getLogger("std");
